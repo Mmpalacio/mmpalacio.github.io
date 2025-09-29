@@ -6,93 +6,105 @@
   <title>Maria Manuela Palacio Villarreal - Stanford Law School</title>
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
+      font-family: 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+      background: linear-gradient(120deg, #e6e6fa 0%, #f5f8fa 100%);
+      color: #1a237e;
       margin: 0;
+    }
+    .container {
+      max-width: 950px;
+      margin: 2.5rem auto;
+      padding: 2rem 1.3rem;
       background: #fff;
-      color: #222;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 2rem 1rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(46,52,142,0.12);
     }
     header {
-      border-bottom: 4px solid #1A237E;
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
+      text-align: center;
+      margin-bottom: 2.3rem;
     }
     h1 {
-      margin: 0;
-      color: #1A237E;
-      font-weight: 700;
+      margin: 0 0 0.5rem 0;
+      color: #1a237e;
+      font-weight: 800;
+      font-size: 2.3rem;
     }
-    h2 {
-      color: #444;
-      font-weight: 600;
-      margin-top: 2rem;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 0.3rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    nav {
-      margin-top: 1rem;
-      border-top: 1px solid #ddd;
-      padding-top: 1rem;
-    }
-    nav a {
-      margin-right: 1.5rem;
-      text-decoration: none;
-      color: #1A237E;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #E6E6FA;
-    }
-    .contact {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    .bio {
-      margin: 1rem 0 2rem 0;
-      font-size: 1.1rem;
-      color: #333;
-      line-height: 1.5;
-      border-left: 4px solid #E6E6FA;
-      padding-left: 1rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-      list-style-type: disc;
-      color: #333;
-    }
-    ul li {
+    .subtitle {
+      color: #4f5cb7;
+      font-size: 1.17rem;
+      font-weight: 540;
       margin-bottom: 0.5rem;
     }
+    .contact {
+      color: #444;
+      font-size: 1.00rem;
+      margin-bottom: 0.6rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      padding: 1rem 0;
+      background: #e6e6fa;
+      border-radius: 15px;
+      margin-bottom: 1.6rem;
+      box-shadow: 0px 2px 12px #e6e6fa;
+    }
+    nav a {
+      color: #1a237e;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.33rem 0.95rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background 0.15s, color 0.18s;
+    }
+    nav a:hover {
+      background: #cbc3e3;
+      color: #5c479a;
+    }
+    .bio {
+      font-size: 1.15rem;
+      color: #222;
+      background: #f6f3fd;
+      padding: 1.1rem 1.2rem;
+      border-radius: 11px;
+      box-shadow: 0px 1px 8px #e6e6fa;
+      margin-bottom: 2.1rem;
+    }
+    section {
+      margin-bottom: 1.45rem;
+      background: #f4f6fd;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      box-shadow: 0 2px 9px rgba(76, 61, 108, 0.06);
+    }
+    h2 {
+      color: #442573;
+      margin-top: 0;
+      font-size: 1.12rem;
+      font-weight: 700;
+      border-left: 3px solid #bbadf7;
+      padding-left: 0.38rem;
+      margin-bottom: 0.7rem;
+    }
+    ul { padding-left: 1.2rem; color: #333; margin: 0.5rem 0 0 0; }
+    ul li { margin-bottom: 0.56rem; }
+    .writing { font-style: italic; color: #6d6a90; }
     @media (max-width: 600px) {
-      body {
-        padding: 1rem 0.5rem;
-      }
-      nav a {
-        display: block;
-        margin-bottom: 0.5rem;
-      }
+      .container { padding: 1rem 0.18rem; }
+      section { padding: 0.7rem 0.17rem; }
+      nav { gap: 0.35rem;}
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Maria Manuela Palacio Villarreal</h1>
-    <div class="contact">
-      <p>Email: <a href="mailto:mpalacio@stanford.edu">mpalacio@stanford.edu</a></p>
-      <p>J.S.D. Candidate, Stanford Law School</p>
-      <p>John M. Olin Fellow — Law & Economics</p>
-    </div>
+  <div class="container">
+    <header>
+      <h1>Maria Manuela Palacio Villarreal</h1>
+      <div class="subtitle">J.S.D. Candidate, Stanford Law School — Law & Economics Fellow</div>
+      <div class="contact">Email: <a href="mailto:mpalacio@stanford.edu">mpalacio@stanford.edu</a></div>
+    </header>
     <nav>
       <a href="#talks">Talks</a>
       <a href="#fellowships">Fellowships</a>
@@ -100,48 +112,46 @@
       <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <div class="bio">
-    Lawyer with a Master of the Science of Law (J.S.M.) and Doctor of the Science of Law (J.S.D.) Candidate at Stanford Law School.<br><br>
-    Recipient of the John M. Olin Fellowship in Law and Economics (2024–25) and the Levin Fellowship in Public Service and Public Interest Law.<br><br>
-    Research focuses on the law and economics of innovation, competition, and regulation in high-tech industries and internet marketplaces, employing quantitative methods to analyze complex regulatory environments.
+    <div class="bio">
+      Lawyer with a Master of the Science of Law (J.S.M.) and Doctor of the Science of Law (J.S.D.) Candidate at Stanford Law School.<br><br>
+      Recipient of the John M. Olin Fellowship in Law and Economics (2024–25) and the Levin Fellowship in Public Service and Public Interest Law.<br><br>
+      Research focuses on the law and economics of innovation, competition, and regulation in high-tech industries and internet marketplaces, employing quantitative methods to analyze complex regulatory environments.
+    </div>
+    <section id="talks">
+      <h2>Selected Talks</h2>
+      <ul>
+        <li><strong>Complaint Narratives as Signals of Emerging Regulatory Risk on Digital Platforms</strong>, Trust & Safety Research Conference 2025, Stanford Cyber Policy Center.</li>
+        <li>International expert engagements with Mexican Competition Commission, ICN Vertical Restraints Project, OECD’s Fighting Bid Rigging in Peru’s Health Sector, Gender Inclusive Competition Policy Workshop (OECD), and ASCOLA Latin America Chapter.</li>
+      </ul>
+    </section>
+    <section id="fellowships">
+      <h2>Fellowships & Awards</h2>
+      <ul>
+        <li>2024–25 John M. Olin Fellowship in Law and Economics, Stanford Law School</li>
+        <li>Levin Fellowship in Public Service and Public Interest Law</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Honors Intern</strong>, California Department of Justice, Antitrust Section (Jun–Aug 2024). Legal and economic analysis supporting antitrust litigation strategy.</li>
+        <li><strong>Competition Policy Advisor & Leader of International Affairs</strong>, Superintendency of Industry and Commerce, Colombia (2019–2022). Developed international strategies, advised OECD and ICN projects, led research on competition policy and enforcement.</li>
+        <li><strong>Case Handler, Antitrust and Cartel</strong>, Superintendency of Industry and Commerce, Colombia (2017–2022). Led cartel detection and enforcement investigations, applying economic and legal expertise.</li>
+        <li><strong>Assistant Professor</strong>, Universidad de los Andes (2020–2022). Designed and taught courses on government contracts and public policy.</li>
+      </ul>
+    </section>
+    <section id="writing">
+      <h2>Writing</h2>
+      <p class="writing">Research papers, essays, and policy analyses forthcoming.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        Email: <a href="mailto:mpalacio@stanford.edu">mpalacio@stanford.edu</a>
+      </div>
+    </section>
   </div>
-
-  <section id="talks">
-    <h2>Selected Talks</h2>
-    <ul>
-      <li><strong>Complaint Narratives as Signals of Emerging Regulatory Risk on Digital Platforms</strong>, Trust & Safety Research Conference 2025, Stanford Cyber Policy Center.</li>
-      <li>International expert engagements with Mexican Competition Commission, ICN Vertical Restraints Project, OECD’s Fighting Bid Rigging in Peru’s Health Sector, Gender Inclusive Competition Policy Workshop (OECD), and ASCOLA Latin America Chapter.</li>
-    </ul>
-  </section>
-
-  <section id="fellowships">
-    <h2>Fellowships & Awards</h2>
-    <ul>
-      <li>2024-25 John M. Olin Fellowship in Law and Economics, Stanford Law School</li>
-      <li>Levin Fellowship in Public Service and Public Interest Law</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>Honors Intern</strong>, California Department of Justice, Antitrust Section (Jun–Aug 2024). Legal and economic analysis supporting antitrust litigation strategy.</li>
-      <li><strong>Competition Policy Advisor & Leader of International Affairs</strong>, Superintendency of Industry and Commerce, Colombia (2019–2022). Developed international strategies, advised OECD and ICN projects, led research on competition policy and enforcement.</li>
-      <li><strong>Case Handler, Antitrust and Cartel</strong>, Superintendency of Industry and Commerce, Colombia (2017–2022). Led cartel detection and enforcement investigations, applying economic and legal expertise.</li>
-      <li><strong>Assistant Professor</strong>, Universidad de los Andes (2020–2022). Designed and taught courses on government contracts and public policy.</li>
-    </ul>
-  </section>
-
-  <section id="writing">
-    <h2>Writing</h2>
-    <p>Research papers, essays, and policy analyses forthcoming.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mpalacio@stanford.edu">mpalacio@stanford.edu</a></p>
-  </section>
 </body>
+</html>
+
 </html>
